@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Test Project</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body data-ng-app="TestApp">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#/contact"><i class="fa fa-fw fa-wrench"></i> Contact</a>
+                </li>
+                <li>
+                    <a href="#/aboutme"><i class="fa fa-fw fa-desktop"></i> About Me</a>
+                </li>
+                <li>
+                    <a href="#/student"><i class="fa fa-fw fa-desktop"></i>Student</a>
+                </li>
+                <!--<li>
+                <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                <ul id="demo" class="collapse">
+                    <li>
+                        <a href="#">Dropdown Item</a>
+                    </li>
+                    <li>
+                        <a href="#">Dropdown Item</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+            </li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="container body-content">
+        <data-ng-view>
+        </data-ng-view>
+        <hr />
+        <footer>
+            <p>&copy; My ASP.NET Application</p>
+        </footer>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/select2.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="Scripts/bootstrap.js"></script>
+    <!-- Underscore -->
+    <script src="Scripts/underscore.js"></script>
+    <!-- Angular -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-sanitize.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-ui/ui-utils.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/angular-select2.js"></script>
+    <script src="Scripts/toastr.js"></script>
+
+    <script src="Scripts/application/index.js"></script>
+    <script src="Scripts/application/student/index.js"></script>
+    <script src="Scripts/application/student/controller/index.js"></script>
+    <script src="Scripts/application/student/model/index.js"></script>
+    <script src="Scripts/application/student/model/student.js"></script>
+    <script src="Scripts/application/student/controller/students.js"></script>
+    <script src="Scripts/application/student/controller/studentcreate.js"></script>
+    
+</body>
+</html>
