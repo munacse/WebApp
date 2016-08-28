@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using WebApp.Core;
+using WebApp.Service.BAL;
 
 namespace WebApp.Controllers
 {
@@ -13,10 +10,10 @@ namespace WebApp.Controllers
     public class StudentsController : ApiController
     {
         [Route("")]
-        public HttpResponseMessage Post(Student student)
+        public async Task<HttpResponseMessage> Post(StudentCreateCommand student)
         {
-            return this.Request.CreateResponse(
-                HttpStatusCode.OK);
+            StudentCreateHandler handle = new StudentCreateHandler();
+            return await handle.Handle(student);
         }
     }
 }

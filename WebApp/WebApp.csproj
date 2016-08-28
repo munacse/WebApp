@@ -194,9 +194,9 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebApp.Core\WebApp.Core.csproj">
-      <Project>{d110b777-6879-4b7b-8366-fa0dd4fa3fed}</Project>
-      <Name>WebApp.Core</Name>
+    <ProjectReference Include="..\WebApp.Service\WebApp.Service.csproj">
+      <Project>{9627aa06-d4aa-4298-8347-bf4615900ce0}</Project>
+      <Name>WebApp.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
